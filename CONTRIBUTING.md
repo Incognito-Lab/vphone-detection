@@ -28,4 +28,4 @@ Contributions to this repository are provided under its [MIT license](LICENSE).
 
 ## Building release packages
 
-The [🛠️ sample workflow](.github/workflows/build-sample.yml) builds and verifies an unsigned device IPA for sample-code, project, and packaging-script changes. Run `bash vphone-indicator-probe/scripts/build-unsigned-ipa.sh` for the same local packaging checks. Version tags in the form `vMAJOR.MINOR.PATCH` publish the IPA, checksum, and build information to Releases after a successful tagged build. Keep build success separate from measured detection results.
+Run `bash vphone-indicator-probe/scripts/build-unsigned-ipa.sh` to build and verify an unsigned device IPA locally. Publish the IPA, checksum, and build information manually to Releases. This repository does not use an automated GitHub Actions build. Keep build success separate from measured detection results.

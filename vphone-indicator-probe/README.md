@@ -1,7 +1,5 @@
 # 📱 vPhone Indicator Probe
 
-[![Build unsigned sample IPA](https://github.com/Incognito-Lab/vphone-detection/actions/workflows/build-sample.yml/badge.svg?branch=main)](https://github.com/Incognito-Lab/vphone-detection/actions/workflows/build-sample.yml)
-
 A SwiftUI iPhone sample for inspecting app-visible vPhone indicators on **iOS 16 or later**. Every indicator keeps its status, observed value, and explanation alongside a provisional conclusion.
 
 <img src="Examples/Screenshots/app-overview.jpg" alt="vPhone probe showing exact markers in the Standard preset" width="300">
@@ -25,21 +23,8 @@ A SwiftUI iPhone sample for inspecting app-visible vPhone indicators on **iOS 16
 
 These are unsigned iOS device builds. A physical iPhone requires your own signing and provisioning. A compatible guest installation route may re-sign the IPA; that establishes runtime visibility rather than normal iOS installation acceptance.
 
-For development builds, open a successful [🛠️ Actions run](https://github.com/Incognito-Lab/vphone-detection/actions/workflows/build-sample.yml) and download its `unsigned-ipa-…` artifact. It contains the IPA, checksum, and build information, and is retained for 14 days.
-
 <details>
-<summary>🔁 Automated builds and releases</summary>
-
-The [🛠️ workflow](../.github/workflows/build-sample.yml) builds sample-code, project, or packaging-script changes on pull requests and pushes to `main`. It can also be run manually. The build uses a GitHub-hosted `macos-26` runner with Xcode 26.6 and requires no Apple signing credentials.
-
-Pushing a tag in the form `vMAJOR.MINOR.PATCH` builds that tagged source and publishes a GitHub Release containing the verified unsigned IPA, SHA-256 checksum, and build information. Only the tag-release job receives repository write permission. Pull-request and manual runs produce artifacts without publishing releases.
-
-For example, after pushing a reviewed version to `main`:
-
-```sh
-git tag -a v0.2.0 -m "v0.2.0"
-git push origin v0.2.0
-```
+<summary>🛠️ Build an unsigned release package locally</summary>
 
 To build the same package locally, run from this sample directory:
 
@@ -53,7 +38,9 @@ Outputs are written under `build/UnsignedIPA/`. To check the downloaded IPA, pla
 shasum -a 256 -c VPhoneIndicatorProbe-unsigned.ipa.sha256
 ```
 
-The packaging verifier checks the device app, launch screen, deployment target, unsigned executable, archive layout, and absence of signing profiles or macOS metadata. A successful build is not a measurement of detection accuracy.
+The packaging verifier checks the device app, launch screen, deployment target, unsigned executable, archive layout, and absence of signing profiles, macOS metadata, or local build paths. Release builds disable debug information and strip the executable before packaging. A successful build is not a measurement of detection accuracy.
+
+Releases are published manually. No GitHub Actions workflow or Apple signing credentials are required.
 
 </details>
 

@@ -30,6 +30,7 @@ LC_VERSION_MIN_IPHONEOS = 0x25
 IOS_PLATFORM = 2
 IOS_SIMULATOR_PLATFORM = 7
 PRIVATE_KEY_HEADER = re.compile(rb"-----BEGIN [A-Z0-9 ]*PRIVATE KEY-----")
+LOCAL_BUILD_PATH = re.compile(rb"(?:/Users/|/home/|/private/var/folders/)[^\x00\s]+")
 FORBIDDEN_SUFFIXES = {
     ".mobileprovision",
     ".provisionprofile",
@@ -124,6 +125,10 @@ def validate_bundle_tree(
                     fail("Cannot inspect app file " + rel_path + ": " + str(exc))
                 if PRIVATE_KEY_HEADER.search(header):
                     fail("App contains a private-key PEM block at " + rel_path)
+                with open(full_path, "rb") as handle:
+                    payload = handle.read()
+                if LOCAL_BUILD_PATH.search(payload):
+                    fail("App contains a local build path at " + rel_path + "; disable debug information before packaging.")
                 if looks_like_macho(header[:4]):
                     try:
                         with open(full_path, "rb") as handle:
