@@ -25,3 +25,7 @@ Build the device target using the [sample instructions](vphone-indicator-probe/R
 Commit source and sanitized evidence only. Raw `Results/` captures, build products, signing material, and workspace instructions are excluded by `.gitignore`. Do not force-add them. The tested upstream code is [vphone-cli 2.12.0](https://github.com/Lakr233/vphone-cli/releases/tag/2.12.0). Reviewed screenshots for documentation belong in `vphone-indicator-probe/Examples/Screenshots/` and must contain no personal identifiers.
 
 Contributions to this repository are provided under its [MIT license](LICENSE).
+
+## Building release packages
+
+The [🛠️ sample workflow](.github/workflows/build-sample.yml) builds and verifies an unsigned device IPA for sample-code, project, and packaging-script changes. Run `bash vphone-indicator-probe/scripts/build-unsigned-ipa.sh` for the same local packaging checks. Version tags in the form `vMAJOR.MINOR.PATCH` publish the IPA, checksum, and build information to Releases after a successful tagged build. Keep build success separate from measured detection results.

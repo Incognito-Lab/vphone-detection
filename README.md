@@ -318,6 +318,8 @@ The exact-marker rule is intentionally scoped to the measured artifacts. If a fu
 
 The optional SwiftUI probe demonstrates these checks, displays every indicator status and observed value, and exports a text report. It runs on iOS 16 or later and has no third-party dependencies. [🧩 Build and run the sample app](vphone-indicator-probe/README.md); screenshots and app-specific instructions are in its README.
 
+[📦 Download the unsigned sample IPA](https://github.com/Incognito-Lab/vphone-detection/releases/latest) from Releases, or use a successful [🛠️ workflow run](https://github.com/Incognito-Lab/vphone-detection/actions/workflows/build-sample.yml) for a development artifact. Each download includes a SHA-256 checksum and build information. Physical-device installation requires your own signing and provisioning. The workflow checks compilation and packaging; it does not retest the detection findings.
+
 <a id="example-reports"></a>
 
 ## 📄 Example reports
