@@ -1,0 +1,49 @@
+vPhone Indicator Probe
+Run: 2026-10-24T17:08:31Z
+Conclusion: Likely real device
+Reason: No marker matched across the completed exact checks. This is provisional for the tested vPhone builds; a modified guest can evade these checks.
+Scope: Heuristic for the tested vPhone builds; a local conclusion is not proof.
+
+[Strong positive markers]
+Hypervisor sysctl | Observed | 0
+  App Review risk: this sysctl name is undocumented. A positive value is useful for this build; zero or ENOENT is inconclusive.
+Experimental renamed sysctl | Not found | sysctl errno 2
+  App Review risk: this sysctl name is undocumented. A positive value is useful for this build; zero or ENOENT is inconclusive.
+vPhone guest daemon | Not found | Path entry absent (ENOENT): /usr/bin/vphoned
+  Absence cannot rule out a virtual device.
+vPhone launch daemon | Not found | Path entry absent (ENOENT): /System/Library/LaunchDaemons/vphoned.plist
+  Absence cannot rule out a virtual device.
+Paravirtual GPU bundle | Not found | Path entry absent (ENOENT): /System/Library/Extensions/AppleParavirtGPUMetalIOGPUFamily.bundle
+  Absence cannot rule out a virtual device.
+vPhone system hook | Not found | Path entry absent (ENOENT): /usr/lib/SystemHook-vphone.dylib
+  Absence cannot rule out a virtual device.
+Metal default device | Observed | Apple A11 GPU
+  Exact vPhone GPU name is a strong positive for this build; the guest can change it.
+Injected vPhone libraries | Not found | No exact vPhone hook in DYLD_INSERT_LIBRARIES
+  Only the exact tested hook path is counted; the generic key is not a marker.
+
+[Supporting consistency checks]
+hw.machine | Observed | iPhone10,6
+  Standard is expected to claim iPhone99,11; Experimental claims iPhone17,3. This row is a live app reading.
+hw.model | Observed | D221AP
+  Standard is expected to expose VPHONE600AP; Experimental D47AP.
+Metal GPU families | Observed | Apple7=false; Common3=false
+  Compare against the claimed model; family support is not a standalone verdict.
+Motion hardware availability | Observed | accelerometer=true, gyro=true, magnetometer=true, deviceMotion=true
+  vPhone can expose virtual sensors; availability alone is weak.
+Camera discovery | Observed | AVCaptureDeviceTypeBuiltInWideAngleCamera:position=1:1920x1080:formats=46, AVCaptureDeviceTypeBuiltInWideAngleCamera:position=2:1920x1080:formats=26, AVCaptureDeviceTypeBuiltInTrueDepthCamera:position=2:1920x1080:formats=26
+  Authorization=0. Discovery does not capture frames.
+hw.ncpu | Observed | 6
+  Compare with a published CPU-core count for the claimed model; not a standalone verdict.
+hw.cputype | Observed | 16777228
+  ARM64 ABI class is broad context; an unexpected value needs verification.
+hw.cpusubtype | Observed | 1
+  Compare with a measured model/OS baseline; this value does not establish CPU features.
+hw.memsize | Observed | 2961539072 bytes
+  Compare exact bytes with a measured model/OS baseline. Published nominal RAM is not an exact sysctl value.
+Motion samples | Observed | gyro samples=20, range=0.0046–0.0107; accelerometer samples=20, range=0.9766–0.9825
+  A stationary real phone can produce nearly constant data. No motion-based verdict is made.
+
+[Context]
+iOS version and build | Observed | iOS 16.7.7, build 20H330
+  Context for comparing devices and preset capabilities.

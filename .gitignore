@@ -1,0 +1,48 @@
+# Separate local project: never include it in this repository.
+/vphone-cli/
+
+# Local workspace instructions and agent/editor state may contain device IDs.
+AGENTS.md
+.agents/
+.codex/
+.claude/
+.vscode/
+.idea/
+.DS_Store
+._*
+
+# Original lab evidence and pre-publication notes stay on this machine.
+/vphone-indicator-probe/Results/
+/vphone-indicator-probe/local-private/
+
+# Builds, packages, reports generated during local validation, and Xcode state.
+build/
+.build/
+DerivedData/
+dist/
+xcuserdata/
+*.xcuserstate
+*.xcresult/
+*.xcarchive/
+*.app/
+*.dSYM/
+*.ipa
+*.log
+
+# Signing material and local configuration.
+*.mobileprovision
+*.provisionprofile
+*.p12
+*.p8
+*.pfx
+*.cer
+*.key
+*.pem
+*.xcconfig
+.env
+.env.*
+!.env.example
+
+# Language caches.
+__pycache__/
+*.pyc

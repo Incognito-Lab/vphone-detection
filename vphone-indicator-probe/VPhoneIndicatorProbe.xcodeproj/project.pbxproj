@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17EC5D9891982EE67191E47C /* VPhoneIndicatorProbeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CDB0D7AD46CD7705003DC2 /* VPhoneIndicatorProbeApp.swift */; };
+		3D326C16E363A462C09F70D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7216452A01D681E3DEE6399 /* Foundation.framework */; };
+		88E1EB6910F0E03680E8B3E3 /* ProbeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D7DACEA0554EF1523BB6B /* ProbeModels.swift */; };
+		C63415B3122953A41118264C /* ProbeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78C56B810A1D4FB08603DE7 /* ProbeEngine.swift */; };
+		D6F9FF2BBD045320367363CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67E5BACB525C000EE59AAC4 /* ContentView.swift */; };
+		E00763C8CBD158F67BA66D35 /* AsyncProbes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229BD2380C7C7A2F659DCAEF /* AsyncProbes.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		229BD2380C7C7A2F659DCAEF /* AsyncProbes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AsyncProbes.swift; sourceTree = "<group>"; };
+		A7216452A01D681E3DEE6399 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B6CDB0D7AD46CD7705003DC2 /* VPhoneIndicatorProbeApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VPhoneIndicatorProbeApp.swift; sourceTree = "<group>"; };
+		C67E5BACB525C000EE59AAC4 /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D9061B3E4A0148F7EE215CC9 /* VPhoneIndicatorProbe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPhoneIndicatorProbe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E78C56B810A1D4FB08603DE7 /* ProbeEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProbeEngine.swift; sourceTree = "<group>"; };
+		FA7D7DACEA0554EF1523BB6B /* ProbeModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProbeModels.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04B30A9653B88CD26EB36851 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D326C16E363A462C09F70D0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		152B075A7CECE413ED2197C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A7216452A01D681E3DEE6399 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		247D905A5EBEEE65EA96281C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				152B075A7CECE413ED2197C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75581CB76E23787AB94754D4 = {
+			isa = PBXGroup;
+			children = (
+				C796F5F1514DE1037FED3536 /* Products */,
+				247D905A5EBEEE65EA96281C /* Frameworks */,
+				E7C055B0094D7868A0E04B97 /* VPhoneIndicatorProbe */,
+			);
+			sourceTree = "<group>";
+		};
+		C796F5F1514DE1037FED3536 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9061B3E4A0148F7EE215CC9 /* VPhoneIndicatorProbe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7C055B0094D7868A0E04B97 /* VPhoneIndicatorProbe */ = {
+			isa = PBXGroup;
+			children = (
+				B6CDB0D7AD46CD7705003DC2 /* VPhoneIndicatorProbeApp.swift */,
+				C67E5BACB525C000EE59AAC4 /* ContentView.swift */,
+				FA7D7DACEA0554EF1523BB6B /* ProbeModels.swift */,
+				E78C56B810A1D4FB08603DE7 /* ProbeEngine.swift */,
+				229BD2380C7C7A2F659DCAEF /* AsyncProbes.swift */,
+			);
+			path = VPhoneIndicatorProbe;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A848B920AE50745961A329F0 /* VPhoneIndicatorProbe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B6B5CE1983B869D9FC0433B /* Build configuration list for PBXNativeTarget "VPhoneIndicatorProbe" */;
+			buildPhases = (
+				4D23C76BA7577384360EFCD6 /* Sources */,
+				04B30A9653B88CD26EB36851 /* Frameworks */,
+				AFE7EA4E3003B04982421679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VPhoneIndicatorProbe;
+			productName = VPhoneIndicatorProbe;
+			productReference = D9061B3E4A0148F7EE215CC9 /* VPhoneIndicatorProbe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D518FB6231E1049A7B044325 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					A848B920AE50745961A329F0 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1FFBBF389A3EA165EA8C5172 /* Build configuration list for PBXProject "VPhoneIndicatorProbe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75581CB76E23787AB94754D4;
+			productRefGroup = C796F5F1514DE1037FED3536 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A848B920AE50745961A329F0 /* VPhoneIndicatorProbe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFE7EA4E3003B04982421679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D23C76BA7577384360EFCD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17EC5D9891982EE67191E47C /* VPhoneIndicatorProbeApp.swift in Sources */,
+				D6F9FF2BBD045320367363CC /* ContentView.swift in Sources */,
+				88E1EB6910F0E03680E8B3E3 /* ProbeModels.swift in Sources */,
+				C63415B3122953A41118264C /* ProbeEngine.swift in Sources */,
+				E00763C8CBD158F67BA66D35 /* AsyncProbes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		199B9A995D6095CA4CF0818D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "vPhone Probe";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Lists camera capabilities for virtual device research.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Samples motion sensor availability for virtual device research.";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.vphone.indicatorprobe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		397FECA257C27A4ABCADCAE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "vPhone Probe";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Lists camera capabilities for virtual device research.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Samples motion sensor availability for virtual device research.";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.vphone.indicatorprobe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5FB65C73E0786B8F3E450830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		799DA413863BF88EFEBE4FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FFBBF389A3EA165EA8C5172 /* Build configuration list for PBXProject "VPhoneIndicatorProbe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				799DA413863BF88EFEBE4FB3 /* Debug */,
+				5FB65C73E0786B8F3E450830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B6B5CE1983B869D9FC0433B /* Build configuration list for PBXNativeTarget "VPhoneIndicatorProbe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				199B9A995D6095CA4CF0818D /* Release */,
+				397FECA257C27A4ABCADCAE4 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D518FB6231E1049A7B044325 /* Project object */;
+}
